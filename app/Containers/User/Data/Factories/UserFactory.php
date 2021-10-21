@@ -9,7 +9,7 @@ $factory->define(App\Containers\User\Models\User::class, function (Faker\Generat
     return [
         'name'           => $faker->name,
         'email'          => $faker->unique()->safeEmail,
-        'password'       => $password ? : $password = Hash::make('testing-password'),
+        'password'       => $password ? : $password = Hash::make('12345678'),
         'remember_token' => Str::random(10),
         'is_client'      => false,
     ];

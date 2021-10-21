@@ -4,6 +4,7 @@ namespace App\Containers\User\Models;
 
 use App\Containers\Authorization\Traits\AuthenticationTrait;
 use App\Containers\Authorization\Traits\AuthorizationTrait;
+use App\Containers\Customer\Models\Customer;
 use App\Containers\Payment\Contracts\ChargeableInterface;
 use App\Containers\Payment\Models\PaymentAccount;
 use App\Containers\Payment\Traits\ChargeableTrait;
@@ -90,4 +91,9 @@ class User extends UserModel implements ChargeableInterface
         return $this->hasMany(PaymentAccount::class);
     }
 
+    public function customer(){
+
+      return $this->hasOne(Customer::class);
+
+    }
 }
