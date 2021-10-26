@@ -4,17 +4,22 @@ namespace App\Containers\Customer\Models;
 
 use App\Containers\User\Models\User;
 use App\Ship\Parents\Models\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Customer extends Model
 {
+
+    use SoftDeletes;
+
+    protected $table = 'customers';
     protected $fillable = [
-
-    ];
-
-    protected $attributes = [
       'birth_date',
       'address',
-      'number_phone'
+      'number_phone',
+      'full_name',
+      'uid',
+      'email',
+      'user_id'
     ];
 
     protected $hidden = [

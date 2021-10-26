@@ -61,6 +61,7 @@ trait ResponseTrait
             'custom'  => $meta,
         ];
 
+
         // no resource key was set
         if (!$resourceKey) {
             // get the resource key from the model
@@ -75,7 +76,10 @@ trait ResponseTrait
 
             // if we have an object, try to get its resourceKey
             if ($obj) {
+              try {
                 $resourceKey = $obj->getResourceKey();
+              } catch (\Throwable $th) {}
+
             }
         }
 

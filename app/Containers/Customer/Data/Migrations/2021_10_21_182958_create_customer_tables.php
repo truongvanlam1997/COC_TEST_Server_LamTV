@@ -15,14 +15,15 @@ class CreateCustomerTables extends Migration
         Schema::create('customers', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->unsignedInteger('user_id');
+            $table->unsignedInteger('user_id')->nullable();
+            $table->string('email',100);
+            $table->string('full_name',50);
             $table->date('birth_date')->nullable();
             $table->string('address',255)->nullable();
             $table->string('number_phone',15)->nullable();
+            $table->string('uid',50)->default(NULL);
             $table->timestamps();
-            //$table->softDeletes();
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->softDeletes();
 
         });
     }
