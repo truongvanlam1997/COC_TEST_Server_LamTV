@@ -3,13 +3,13 @@
 namespace App\Containers\Admin\Actions;
 
 use App\Ship\Parents\Actions\Action;
-use App\Ship\Parents\Requests\Request;
 use Apiato\Core\Foundation\Facades\Apiato;
+use App\Ship\Parents\Requests\Request;
 
-class DeleteAdminAction extends Action
+class AdminJwtLoginAction extends Action
 {
     public function run(Request $request)
     {
-        return Apiato::call('Admin@DeleteAdminTask', [$request->id]);
+        // $var = Apiato::call('Container@Task', [$arg1, $arg2, ...]);
     }
 }

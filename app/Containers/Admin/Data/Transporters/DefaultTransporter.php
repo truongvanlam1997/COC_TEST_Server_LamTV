@@ -4,7 +4,7 @@ namespace App\Containers\Admin\Data\Transporters;
 
 use App\Ship\Parents\Transporters\Transporter;
 
-class UpdateAdminTransporter extends Transporter
+class DefaultTransporter extends Transporter
 {
 
     /**

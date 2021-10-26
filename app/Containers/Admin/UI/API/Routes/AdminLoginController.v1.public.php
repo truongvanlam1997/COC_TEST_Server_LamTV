@@ -23,7 +23,4 @@
 $router->post('admins/login', [
     'as' => 'api_admin_admin_login_controller',
     'uses'  => 'AdminLoginController',
-    'middleware' => [
-      'auth:api',
-    ],
 ]);
