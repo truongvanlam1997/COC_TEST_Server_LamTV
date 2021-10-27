@@ -10,12 +10,27 @@
  * @apiVersion         1.0.0
  * @apiPermission      none
  *
- * @apiParam           {String}  parameters here..
+ * @apiParam
+ *
+ *
+ {
+    "email": "admin@admin.com",
+    "password": "admin"
+  }
  *
  * @apiSuccessExample  {json}  Success-Response:
  * HTTP/1.1 200 OK
 {
-  // Insert the response of the request here...
+    "data": {
+        "object": "JwtToken",
+        "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuY29jLXRlc3QubG9jYWxcL3YxXC9hZG1pbnNcL2xvZ2luIiwiaWF0IjoxNjM1MzQ0NTYyLCJleHAiOjE2MzUzNDgxNjIsIm5iZiI6MTYzNTM0NDU2MiwianRpIjoiMUJEVTF1SXpFd3BsUng4WiIsInN1YiI6MSwicHJ2IjoiNWQ5MGY5MDI3YTM4NzFmMDQyYTI2MzYxMzA4YzZmMDZkNmIyZDMyOCJ9.06nT25qQ7ZEYQCxSWfWZmygqYzrO--xGuXWQrNgATWc",
+        "expires_in": 3600,
+        "token_type": "Bearer"
+    },
+    "meta": {
+        "include": [],
+        "custom": []
+    }
 }
  */
 
