@@ -15,7 +15,42 @@
  * @apiSuccessExample  {json}  Success-Response:
  * HTTP/1.1 200 OK
 {
-  // Insert the response of the request here...
+    "data": [
+        {
+            "object": "Course",
+            "id": 1,
+            "name": "Php Course",
+            "description": "Php Course"
+        },
+        {
+            "object": "Course",
+            "id": 2,
+            "name": "Laravel Course",
+            "description": "Laravel Course"
+        },
+        {
+            "object": "Course",
+            "id": 3,
+            "name": "Reactjs Course",
+            "description": "Reactjs Course"
+        },
+        {
+            "object": "Course",
+            "id": 4,
+            "name": "Vuejs Course",
+            "description": "Vuejs Course"
+        },
+        {
+            "object": "Course",
+            "id": 5,
+            "name": "Git Course",
+            "description": "Git Course"
+        }
+    ],
+    "meta": {
+        "include": [],
+        "custom": []
+    }
 }
  */
 
