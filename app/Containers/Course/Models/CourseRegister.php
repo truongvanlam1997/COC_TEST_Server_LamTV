@@ -2,6 +2,7 @@
 
 namespace App\Containers\Course\Models;
 
+use App\Containers\Customer\Models\Customer;
 use App\Ship\Parents\Models\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -40,4 +41,9 @@ class CourseRegister extends Model
      * A resource key to be used by the the JSON API Serializer responses.
      */
     protected $resourceKey = 'courseregisters';
+
+    public function customer(){
+
+      return $this->belongsTo(Customer::class);
+    }
 }
