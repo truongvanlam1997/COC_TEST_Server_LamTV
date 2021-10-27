@@ -17,6 +17,6 @@ class GetAllCoursesTask extends Task
 
     public function run()
     {
-        return $this->repository->paginate();
+        return $this->repository->get();
     }
 }
