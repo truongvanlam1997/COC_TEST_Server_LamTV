@@ -2,6 +2,7 @@
 
 namespace App\Containers\Customer\Models;
 
+use App\Containers\Course\Models\CourseRegister;
 use App\Containers\User\Models\User;
 use App\Ship\Parents\Models\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -20,6 +21,7 @@ class Customer extends Model
       'uid',
       'email',
       'user_id',
+      'avatar',
     ];
 
     protected $hidden = [
@@ -45,5 +47,10 @@ class Customer extends Model
 
       return $this->belongsTo(User::class);
 
+    }
+
+    public function courseRegister(){
+
+      return $this->hasOne(CourseRegister::class);
     }
 }

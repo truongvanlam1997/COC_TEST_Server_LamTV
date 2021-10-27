@@ -17,6 +17,7 @@ class CreateCourseDurationsTables extends Migration
             $table->increments('id');
             $table->string('name',255);
             $table->text('description')->nullable();
+            $table->integer('duration_month')->default(0);
             $table->timestamps();
             //$table->softDeletes();
 

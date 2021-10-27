@@ -19,6 +19,9 @@ class CreateCourseRegistersTables extends Migration
             $table->unsignedInteger('course_id');
             $table->unsignedInteger('course_duration_id');
             $table->unsignedInteger('course_learn_hour_id');
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
+            $table->time('start_time');
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade')->change();

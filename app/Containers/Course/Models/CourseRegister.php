@@ -13,7 +13,10 @@ class CourseRegister extends Model
       'customer_id',
       'course_id',
       'course_duration_id',
-      'course_learn_hour_id'
+      'course_learn_hour_id',
+      'start_date',
+      'end_date',
+      'start_time'
     ];
 
     protected $attributes = [

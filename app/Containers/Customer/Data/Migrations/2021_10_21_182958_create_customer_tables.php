@@ -16,6 +16,7 @@ class CreateCustomerTables extends Migration
 
             $table->increments('id');
             $table->unsignedInteger('user_id')->nullable();
+            $table->string('avatar',255)->nullable();
             $table->string('email',100);
             $table->string('full_name',50);
             $table->date('birth_date')->nullable();

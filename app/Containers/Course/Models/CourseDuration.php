@@ -8,7 +8,8 @@ class CourseDuration extends Model
 {
     protected $fillable = [
       'name',
-      'description'
+      'description',
+      'duration_month'
     ];
 
     protected $attributes = [

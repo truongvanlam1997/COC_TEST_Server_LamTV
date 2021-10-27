@@ -20,9 +20,9 @@ class CourseSeeder extends Seeder
         Apiato::call(CreateCourseTask::class,[['name' => 'Git Course','description' => "Git Course"]]);
 
         // // Seeder Course duration
-        Apiato::call(CreateCourseDurationTask::class,[['name' => '3 month','description'=>'3 month']]);
-        Apiato::call(CreateCourseDurationTask::class,[['name' => '6 month','description'=>'6 month']]);
-        Apiato::call(CreateCourseDurationTask::class,[['name' => '12 month','description'=>'12 month']]);
+        Apiato::call(CreateCourseDurationTask::class,[['name' => '3 month','description'=>'3 month', 'duration_month' => 3]]);
+        Apiato::call(CreateCourseDurationTask::class,[['name' => '6 month','description'=>'6 month', 'duration_month' => 6]]);
+        Apiato::call(CreateCourseDurationTask::class,[['name' => '12 month','description'=>'12 month', 'duration_month' => 12]]);
 
         // seeder Course Learn Hour
         Apiato::call(CreateCourseLearnHourTask::class,[["name" => "01:00","description"=>"01:00"]]);
