@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @apiGroup           Admin
+ * @apiGroup           Admin Login
  * @apiName            AdminLoginController
  *
  * @api                {POST} /v1/admins/login Endpoint title here..

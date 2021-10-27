@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @apiGroup           Customer
+ * @apiGroup           Customer get up register course
  * @apiName            GetUpCourseController
  *
  * @api                {POST} /v1/customer/courses/get-up Endpoint title here..
